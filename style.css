@@ -1,0 +1,472 @@
+:root{
+    --primary-color : #09b850;
+    --primary-color-dark : rgb(8, 156, 68);
+    --para-color : #85878a;
+    --bg-white : white;
+    --footer-link-color : #dee2e6;
+    --dark : #161618;
+    --light-dark : #161618a8;
+    --black-button-hover : #3d3e42a4;
+    --black-button : #2a2a2e;
+    --light-blue : rgba(70, 70, 245, 0.925);
+
+}
+/* ================================ common colors ends =========================================== */
+/* ================================ some common classes ====================================== */
+.dark-theme{
+    background-color: var(--dark) ;
+}
+a:hover{
+    color: var(--primary-color-dark);
+}
+.primaryBackgroundColor{
+    background-color: var(--primary-color);
+}
+.primaryButtonHover:hover{
+    background-color: var(--primary-color-dark);
+}
+.text-white{
+    color: white;
+}
+.text-primary-color{
+    color: var(--primary-color);
+}
+.text-para-color{
+    color: var(--para-color);
+}
+.fs-small{
+    font-size: 16px;
+}
+.heading-text-family,h1,h2,h3,h4,h5,h6{
+    font-family: "Instrument Sans", sans-serif;
+}
+.body-text-family{
+    font-family: "Inter", sans-serif;
+}
+/* ================================ nav-bar styling start ===================================  */
+.header{
+    background-color: var(--bg-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index : 100;
+}
+.dropdown-item:hover{
+    color: var(--primary-color-dark);
+}
+.navbar-expand-lg .navbar-brand svg{
+    height: 32px;
+}
+#nav-btn{
+    height: 32px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    font-size: small;
+}
+#nav-theme-icon{
+    width: 20px;
+}
+#nav-user-icon{
+    /* padding: 1px; */
+    height: 15px;
+    width: 15px;
+    /* margin: 0px 5px; */
+    border-radius: 50%;
+    
+}
+.navbar-collapse .nav-link:hover{
+    color: var(--primary-color);
+}
+/* ====================dark theme nav-bar configuration start============ */
+.dark-theme .header{
+    background-color: var(--dark); 
+}
+.dark-theme #logo-text{
+    fill : var(--bg-white );
+}
+.dark-theme #theme-button{
+    background-color: var(--dark);
+}
+.dark-theme #nav-theme-icon{
+    fill: var(--light-blue);
+}
+.dark-theme #navbarSupportedContent li a{
+    color: var(--bg-white);
+}
+.dark-theme #navbarSupportedContent li a:hover{
+    color: var(--primary-color-dark);
+}
+.dark-theme .dropdown-menu{
+    background-color: var(--dark);
+}
+.dark-theme .dropdown-item:hover {
+    background-color: var(--black-button-hover); /* Change this to your desired hover background color */
+  }
+
+.dark-theme .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+.dark-theme .navbar-toggler{
+    border-color: white;
+}
+
+/*==================== dark theme nav-bar configuration ends =================== */
+
+/* =============================== banner or hero section start ============================================= */
+
+.main{
+    margin-top : 66px;
+}
+/* typing text animation color */
+#typed-text{
+    color: var(--primary-color);
+}
+/*  hero section services - globe and user icon starts*/
+#main-service-images{
+    font-size: 30px;
+    color:var(--primary-color);
+    margin-right: 5px;
+    margin-top: 5px;
+    }
+.main-service-content h5{
+    margin-bottom: 0;
+}
+
+/*  hero section services - globe and user icon ends*/
+/* input tag styling start */
+.main-form-section{
+    border : 1px solid black;
+    padding: 8px 8px;
+    margin-bottom: 20px;
+}
+.main-form-section input {
+    height: 45px ;
+    border: none;
+    width: 80%;
+}
+.main-form-section input:focus{
+    outline: none;
+}
+.main-form-section button{
+    height: 45px;
+    font-size: 18px;
+    width: 140px;
+}
+/* input tag styling ends */
+/* image waala part editing started  */
+.banner-image-div{
+    position: relative;
+}
+.three-dashed-element{
+    position: absolute;
+    z-index: 10;
+    top: -30px;
+    left: -65px;
+}
+.main-image-right-corner{
+    height: 87px;
+    width: 230px;
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    top: -37px;
+    right: -26px;
+    border-radius: 8px;
+    padding-top: 5px;
+}
+.main-image-right-corner-text p{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+#main-image-right-corner-icon{
+    height: 2rem;
+    width: 8rem;
+}
+.main-image-bottom-left{
+    width: 180px;
+    position: absolute;
+    z-index: 7;
+    background-color: black;
+    bottom: -20px;
+    left: -20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: smaller;
+    font-weight: bolder;
+}
+.main-image-bottom-left-visitors{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-left: -15px;
+}
+/* dark theme main-form section starts */
+.dark-theme .main-form-section{
+    border: 1px solid white;
+}
+.dark-theme .main-form-section input{
+    background-color: var(--dark);
+}
+.dark-theme .main-form-section button{
+    background-color: var(--black-button);
+}
+.dark-theme .main-form-section button:hover{
+    background-color: var(--black-button-hover);
+}
+.dark-theme .three-dashed-element{
+    fill: whitesmoke;
+}
+.dark-theme .main-image-right-corner{
+    background-color: #191B1D;
+}
+/* dark theme main-form section ends */
+/* =============================== banner section end ============================================= */
+/* ============================== sliding companies section starts ================================= */
+  /* sliding content css starts */
+  #swipper-companies-main {
+    width: 100%;
+    height: 100%;
+  }
+
+  #swipper-item-div {
+    text-align: center;
+    width: 125px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #swipper-item-div img {
+    display: block;
+    width: 123px;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all;
+    transition-duration: 200ms;
+    overflow-x: hidden;overflow-y: hidden;
+  }
+  #swipper-item-div img:hover{
+    filter: none;
+  }
+    /* dark theme starts */
+  .dark-theme #swipper-item-div{
+    background-color: var(--dark);
+  }
+    /* dark theme ends */
+  /* ====================== slidiing companies section ends ====================== */
+  /* ======================== ABOUT SECTION STARTS ============================== */
+  .companies-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  /* .companies-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.presentation-image{
+    height : 80%;
+    background: url('assets/presentation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.h-45{
+    height: 45%;
+}
+.vh-150{
+    height: 150vh;
+} */
+.presentation-image {
+    width: 100%;
+    height: 100%;
+  }
+.chairs-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================= ABOUT SECTION ENDS ============================ */
+/* ========================= CARDS(SERVICES) SECTION STARTS ========================== */
+.card-section-background{
+    background-color: #202124;
+}
+.card-internal-div{
+    position: relative;
+}
+.card-background{
+    background-color: #292A2D;
+}
+
+.card-icon{
+    position :  absolute;
+    top : -20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size : larger;
+}
+.card-link{
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.arrow-right{
+    transition-property: all;
+    transition-duration: 500ms;
+}
+.card-link:hover .arrow-right{
+    transform: translateX(10px);
+}
+
+/* dark theme boss-mode-cards starts */
+.dark-theme .boss-mode-cards{
+    background-color: var(--dark);
+    color: white;
+}
+.dark-theme #dark-fill-white{
+    fill: white;
+}
+/* dark theme boss-mode-cards ends */
+/* ============================== SERVICES SECTION ENDS ================================= */
+/* ============================== TESTIMONIALS SECTION STARTS ==========================  */
+  .testimonial-wrapper{
+    height: max-content;
+    padding: 10px;
+  }
+  #stars-image{
+    height: 15px;
+  }
+  #testimonial-para{
+    font-size: 16px;
+  }
+  #testimonial-image{
+    height: 40px;
+    width: 40px;
+  }
+  .last-animated-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  #testimonial-para{
+    text-align: left;
+  }
+  #testimonial-image-name{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  #testimonial-image-name>span{
+    color: #46474A;
+    font-weight: 500;
+  } 
+  /* =======================TESTIMONIAL SECTION ENDS ==================== */
+  /* ====================== FOOTER SECTION STARTS ======================= */
+  
+  .footer-links{
+    text-decoration: none;
+    color: var(--footer-link-color);
+    font-size: small;
+  }
+  footer ul{
+    list-style-type: none;
+  }
+  footer p{
+    /* font-size: small; */
+    color: var(--footer-link-color);
+  }
+  footer{
+    margin-top: 48px;
+    padding: 48px;
+  }
+/* =======================FOOTER SECTION ENDS ========================== */
+@media(max-width : 576px){
+    .presentation-image{
+        height: 70vh;
+    }
+    .chairs-image{
+        height: 70vh;
+    }
+}
+/* small screen and above */
+@media (min-width : 577px){
+    .about-section-height{
+        height: 90vh !important;
+    }
+    .vh-sm-100{
+        height: 80vh !important;
+    }
+    .h-sm-20{
+        height: 20% !important;
+    }
+    .h-sm-80{
+        height: calc(80% - 16px) !important;
+    }
+    .h-sm-100{
+        height: 100%  !important;
+    }
+    .card1{
+        max-width: calc(50% - 16px);
+    }
+
+}
+
+/* small screen and above  */
+@media(min-width:577px) and (max-width:768px){
+    .about-section-height{
+        height: 75vh !important;
+    }
+}
+/* medium screen and above  */
+/* medium screen */
+@media (min-width : 769px) and (max-width : 992px){
+    .card1{
+        max-width: calc(33% - 16px);
+    }
+    
+}
+/* large size screen and above it  */
+@media (min-width : 993px){
+    .card1{
+        max-width: calc(25% - 16px);
+    }
+    footer{
+        position: absolute;
+        padding-top: 250px;
+        margin-top: 100px;
+        width: 100%;
+    }
+    #green-footer-block{
+        position : absolute !important;
+        z-index: 10;
+        top : -50px !important;
+        
+       }
+}
+/* extra large screens and above */
+@media(min-width:1200px){
+    .banner-image{
+        height: 80vh;
+        width: 80%;
+    }
+    .about-section-height{
+        height: 85vh !important;
+    }
+}
